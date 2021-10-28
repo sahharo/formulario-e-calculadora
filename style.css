@@ -1,0 +1,11 @@
+#blocoForm{
+    text-align: center;
+    border: 1px solid #5f5555;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#sobrenome{
+    margin-right: 30px;
+}

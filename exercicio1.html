@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario simples</title>
+<link rel="stylesheet" href="./style.css"/>
+<script type="text/javascript"></script>
+</head>
+<body>
+    <div id="blocoForm">
+        <h2>Meu Formulario</h2>
+        <div id="nome">
+        <label for="nome">Nome: </label><input type="text" id="campoNome" placeholder="Digite o primeiro nome"/>
+        <button type="submit" onclick="alerta()">Você será alertado</button>
+        </div>
+        <br>
+        <div id="sobrenome">   
+        <label for="nome">Sobrenome: </label><input type="text" id="campoSobrenome"  placeholder="Digite o sobrenome"/>
+        <button type="submit" id="trocar" onclick="inverte()"f>Trocar dados/time</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function alerta(){
+        let nome = document.getElementById("campoNome").value
+        let sobrenome = document.getElementById("campoSobrenome").value
+        alert("Seja bem vindo ao formulario, " + nome +" "+sobrenome)
+    }
+
+    function inverte(){
+        let l1 = document.getElementById("campoNome").value
+        let l2 = document.getElementById("campoSobrenome").value
+        document.getElementById("campoNome").value = l2
+        document.getElementById("campoSobrenome").value = l1
+        }
+        let idDoTimer
+        let timer = 2000
+
+
+</script>
